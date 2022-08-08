@@ -1,0 +1,96 @@
+.nav-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+
+.btn-Toggle-Nav {
+    width: 60px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    background-image: url("hamburger_menu.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.btn-Toggle-Nav:hover {
+    opacity: 0.5;
+}
+
+.nav-sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    padding: 0 5px;
+    height: calc(100vh - 60px);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-sidebar ul {
+    padding-top: 15px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.nav-sidebar ul li {
+    line-height: 60px;
+    list-style: none;
+}
+
+.nav-sidebar ul li a {
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: arial;
+    font-size: 16px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-sidebar ul li a:hover {
+    background-color: #222;
+}
+
+.nav-sidebar li:nth-child(1) {
+    background-color: grey;
+}
+
+.nav-sidebar li:nth-child(2) {
+    background-color: red;
+}
+
+.nav-sidebar li:nth-child(3) {
+    background-color: rgb(255, 149, 0);
+}
+
+.nav-sidebar li:nth-child(4) {
+    background-color: rgb(162, 0, 255);
+}
+
+.nav-sidebar li:nth-child(5) {
+    background-color: rgb(0, 255, 8);
+}
+
+body {
+    background: rgb(255, 255, 255)
+}
+
+.white-background {
+    background-color: rgb(255, 255, 255);
+}
+
+.red-background {
+    background-color: red;
+}
